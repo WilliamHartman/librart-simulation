@@ -16,9 +16,10 @@ module.exports = {
             .then(result => res.status(200).send(result))
     }, 
     
+    // COMP 76E
     updateUser: (req, res) => {
         const db = req.app.get('db');
-        db.update_user([req.params.user_id])
+        db.update_user([req.query.user_id])
             .then(result => res.status(200).send(result))
     }, 
 
