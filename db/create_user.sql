@@ -1,0 +1,1 @@
+insert into simusers (username, password) values ($1, $2)

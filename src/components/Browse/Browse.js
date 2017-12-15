@@ -5,6 +5,7 @@ import Navbar from '../Navbar/Navbar';
 import BookCard from './BookCard';
 // COMP 43C
 import { connect } from 'react-redux';
+import axios from 'axios'
 
 
 class Browse extends Component {
@@ -24,6 +25,9 @@ class Browse extends Component {
     // COMP 39B
     componentDidMount = () => {
       console.log('Fires when the component is mounted to the DOM')
+      // COMP 44E
+      axios.get(`/api/getUser/${this.props.user.user_id}`)
+        .then(result => console.log(result))
     }
     
 

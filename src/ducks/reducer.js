@@ -3,7 +3,10 @@
 import axios from 'axios';
 
 const initialState = {
-    user: {},
+    user: {
+        user_id: 0,
+        username: 'test'
+    },
     cart: [],
     books: [
         {
