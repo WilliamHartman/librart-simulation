@@ -1,7 +1,8 @@
 .Browse {
     width: 100vw;
     height: 100vh;
-    background-color: #4e1e29; 
+    /* COMP 22C-5 */
+    background-image: url('../../assets/back.jpg'); 
     display: flex;
     align-items: center;
     justify-content: center;
