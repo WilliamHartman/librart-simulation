@@ -1,0 +1,35 @@
+.Navbar {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-left {
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-left img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar-left a {
+    text-decoration: none;
+    color: #c6b38e;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.navbar-right {
+    width: 30%;
+}
+
+.navbar-right Link {
+    float: right;
+    text-align: right;
+}
