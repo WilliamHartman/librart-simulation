@@ -47,7 +47,7 @@ app.get(`/api/getUser/:id`, dCtrl.getUser)
 app.post(`/api/createUser/`, dCtrl.createUser)
 
 // COMP 74D-3
-app.put(`/api/updateUser/:id`, dCtrl.updateUser)
+app.put(`/api/updateUser/`, dCtrl.updateUser)
 
 // COMP 74D-4
 app.delete(`/api/deleteUser/:id`, dCtrl.deleteUser)

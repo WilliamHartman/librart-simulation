@@ -23,15 +23,21 @@
     border-radius: 5px;
     
 }
+
 .browse-book-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .browse-book-card {
     text-decoration: none;
     color: black;
     border: thin solid black;
 }
 
+/* COMP 22C */
+.browse-book h1 + h1{
+    border: 1px solid red;
+}
 

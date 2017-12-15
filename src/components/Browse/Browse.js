@@ -25,9 +25,7 @@ class Browse extends Component {
     // COMP 39B
     componentDidMount = () => {
       console.log('Fires when the component is mounted to the DOM')
-      // COMP 44E
-      axios.get(`/api/getUser/${this.props.user.user_id}`)
-        .then(result => console.log(result))
+      
     }
     
 
@@ -54,6 +52,10 @@ class Browse extends Component {
                 </div>
             )
         })
+
+        // COMP 42J COMP 42K
+        console.log(this.props.match)
+
         return (
             <div className="Browse">
                 {/* COMP 36H COMP 54G*/}
@@ -82,5 +84,11 @@ const mapStateToProps = (state) => {
       books
     };
   };
+
+const mapDispatchToProps = () => {
+    return {
+
+    }
+}
 
   export default connect(mapStateToProps, {  })(Browse);

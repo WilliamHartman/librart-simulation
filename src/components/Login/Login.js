@@ -23,7 +23,7 @@ class Login extends Component {
         return(
             <div className="Login">
                 <div className="login-content">
-                    {/* COMP 54E COMP 59E*/}
+                    {/* COMP 54E COMP 59E COMP 54J*/}
                     <img src={logo} alt="book logo"/>
                     <h1>Book Exchange</h1>
                     <div className="login-input-container">
