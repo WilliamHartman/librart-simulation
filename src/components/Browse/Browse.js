@@ -15,34 +15,49 @@ class Browse extends Component {
         
         // COMP 36C
         this.state = {
-            countBooks: 0
+            bookChecked: 0
         }
-        this.countBooks = this.countBooks.bind(this);
+        this.checkBook = this.checkBook.bind(this);
     }
 
+    // COMP 39C
+    // COMP 39B
+    componentDidMount = () => {
+      console.log('Fires when the component is mounted to the DOM')
+    }
+    
+
+    // COMP 39D
+    componentWillReceiveProps = (nextProps) => {
+      console.log('Fires when the component get new props, can be from reducer or parent')
+    }
+    
+
     // COMP 37D
-    countBooks = (num) => {
+    checkBook = (num) => {
         // COMP 36D
-        this.setState({countBooks: this.props.books.length})
+        this.setState({bookChecked: num})
     }
 
     // COMP 36F
     render() {
         // COMP 36G
-        let jsxBooks = this.props.books.map((book) => {
+        let jsxBooks = this.props.books.map((book, index) => {
             return (
                 <div>
-                    <BookCard book={book}/>>
+                    {/* COMP 37C */}
+                    <BookCard book={book} checkBook={this.checkBook} index={index}/>>
                 </div>
             )
         })
         return (
             <div className="Browse">
-                {/* COMP 36H */}
+                {/* COMP 36H COMP 54G*/}
                 <Navbar />
                 <div className="browse-bottom">
                     <div className="browse-main-container">
                         <h1>Browse Inventory</h1>
+                        <p>Book checked: {this.props.books[this.state.bookChecked].title}</p>
                         <div className="browse-book-container">
                             <div className="browse-book-card">
                                 {jsxBooks}

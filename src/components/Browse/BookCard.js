@@ -8,6 +8,8 @@ const BookCard = (props) => {
             <div className="browse-book" key={props.book.title}>
                 <h1>{props.book.title}</h1>
                 <h2>{props.book.author}</h2>
+                {/* COMP 59C*/}
+                <button onClick={() => props.checkBook(props.index)} role='button'>Check</button>
                 <Link to="/details"><h3>Details</h3></Link>
             </div>
         )

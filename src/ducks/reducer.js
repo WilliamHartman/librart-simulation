@@ -9,6 +9,10 @@ const initialState = {
         {
             title: 'The Hobbit',
             author: 'JRR Tolkein'
+        },
+        {
+            title: 'Harry Potter',
+            author: 'JK Rowling'
         }
     ]
 }

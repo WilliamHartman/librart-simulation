@@ -23,9 +23,18 @@
     font-weight: 300;
   }
 
+/* COMP 28E */
   img {
       height: 100px;
       width: 100px;
+      animation: spin infinite 20s linear;
+      transition: 1s;
+  }
+
+  /* COMP 26H */
+  img:hover {
+      width: 150px;
+      height: 150px;
   }
 
   .login-input-container {
@@ -36,4 +45,18 @@
       display: flex;
       flex-direction: column;
       border-radius: 3px;
+  }
+
+/* COMP 29C COMP 29D */
+  @media screen and (mid-width: 700px){
+      .login-input-container {
+        align-items: center;
+        justify-content: space-around;
+      }
+  }
+
+/* COMP 28C COMP 28D */
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
   }
