@@ -27,10 +27,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: thick solid white;
 }
 .browse-book-card {
     text-decoration: none;
     color: black;
     border: thin solid black;
 }
+

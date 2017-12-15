@@ -6,7 +6,9 @@ import Browse from './components/Browse/Browse.js';
 
 export default (
     <div>
+        {/* 42F */}
     <Switch>
+        {/* 42G */}        
         <Route component={ Login } exact path='/' />
         <Route component={ Browse } path='/browse'/>
     </Switch>

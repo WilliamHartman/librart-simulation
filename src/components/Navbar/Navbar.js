@@ -4,22 +4,22 @@ import { Link } from 'react-router-dom';
 import tanLogo from '../../assets/tan-logo.svg';
 
 class Nav extends Component {
-    constructor() {
-        super();
+    // constructor() {
+    //     super();
 
 
-    }
+    // }
     render() {
         return (
             <div className="Navbar">
                 <div className="navbar-left">
                     <img src={tanLogo} alt="tan logo"/>
-                    <Link to='/browse'><a>Browse</a></Link>
-                    <Link to='/cart'><a>Cart</a></Link>
-                    <Link to='/shelf'><a>My Shelf</a></Link>
+                    <Link to='/browse'><div>Browse</div></Link>
+                    <Link to='/cart'><div>Cdivrt</div></Link>
+                    <Link to='/shelf'><div>My Shelf</div></Link>
                 </div>
                 <div className="navbar-right">
-                    <Link to='/'><a>Logout</a></Link>
+                    <Link to='/'><div>Logout</div></Link>
                 </div>
 
 
